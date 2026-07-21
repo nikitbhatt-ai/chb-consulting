@@ -20,32 +20,32 @@ const socialIcons: Record<string, React.ReactNode> = {
 
 export function SiteFooter() {
   return (
-    <footer className="mt-auto border-t border-border bg-muted">
+    <footer className="on-dark mt-auto bg-ink text-on-ink">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           {/* Business identity */}
           <div>
-            <p className="font-serif text-lg font-semibold text-heading">
+            <p className="font-serif text-lg font-semibold text-on-ink">
               {siteConfig.name}
             </p>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-2 text-sm text-on-ink-muted">
               {siteConfig.city}, {siteConfig.state}
             </p>
             <dl className="mt-4 space-y-1 text-sm">
               <div className="flex gap-2">
-                <dt className="text-muted-foreground">Phone</dt>
-                <dd className="text-foreground">{siteConfig.contact.phone}</dd>
+                <dt className="text-on-ink-muted">Phone</dt>
+                <dd className="text-on-ink">{siteConfig.contact.phone}</dd>
               </div>
               <div className="flex gap-2">
-                <dt className="text-muted-foreground">Email</dt>
-                <dd className="text-foreground">{siteConfig.contact.email}</dd>
+                <dt className="text-on-ink-muted">Email</dt>
+                <dd className="text-on-ink">{siteConfig.contact.email}</dd>
               </div>
             </dl>
           </div>
 
           {/* Navigation */}
           <nav aria-label="Footer" className="md:justify-self-center">
-            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            <p className="text-xs font-semibold uppercase tracking-wide text-on-ink-muted">
               Explore
             </p>
             <ul className="mt-4 space-y-2">
@@ -53,7 +53,7 @@ export function SiteFooter() {
                 <li key={item.href + item.label}>
                   <Link
                     href={item.href}
-                    className="text-sm text-foreground transition-colors hover:text-link"
+                    className="text-sm text-on-ink/80 transition-colors hover:text-amber-bright"
                   >
                     {item.label}
                   </Link>
@@ -64,7 +64,7 @@ export function SiteFooter() {
 
           {/* Social */}
           <div className="md:justify-self-end">
-            <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            <p className="text-xs font-semibold uppercase tracking-wide text-on-ink-muted">
               Follow
             </p>
             <ul className="mt-4 flex gap-3">
@@ -72,7 +72,7 @@ export function SiteFooter() {
                 <li key={social.platform}>
                   <a
                     href={social.href}
-                    className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-heading transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    className="flex h-9 w-9 items-center justify-center rounded-md border border-[color:var(--on-ink-border)] text-on-ink transition-colors hover:bg-white/10 hover:text-amber-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     aria-label={`${siteConfig.name} on ${social.label}`}
                   >
                     <svg
@@ -90,8 +90,8 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-6">
-          <p className="text-xs text-muted-foreground">
+        <div className="mt-12 border-t border-[color:var(--on-ink-border)] pt-6">
+          <p className="text-xs text-on-ink-muted">
             &copy; {siteConfig.legalName}. All rights reserved.
           </p>
         </div>

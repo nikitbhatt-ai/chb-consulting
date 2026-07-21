@@ -19,14 +19,16 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          backgroundColor: "#0f1e2e",
+          backgroundColor: "#101216",
+          backgroundImage:
+            "radial-gradient(60% 70% at 85% 10%, rgba(200,162,76,0.22), transparent 60%)",
           padding: "80px",
-          color: "#ffffff",
+          color: "#ecebe4",
           fontFamily: "serif",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 40, letterSpacing: 8, color: "#9fb4c7" }}>
+          <div style={{ fontSize: 34, letterSpacing: 8, color: "#c8a24c" }}>
             CHB FOOD SAFETY CONSULTING
           </div>
         </div>
@@ -41,7 +43,7 @@ export default function OpengraphImage() {
         >
           One bad inspection becomes a brand problem across every location.
         </div>
-        <div style={{ display: "flex", fontSize: 30, color: "#9fb4c7" }}>
+        <div style={{ display: "flex", fontSize: 30, color: "#a8a49a" }}>
           Inspection readiness for multi-unit restaurant, convenience, and
           grocery operators.
         </div>

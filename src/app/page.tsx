@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Camera, Quote, Utensils } from "lucide-react";
 
 import { CalendlyPopupButton } from "@/components/calendly/calendly-popup-button";
 import { CalendlyInline } from "@/components/calendly/calendly-inline";
 import { StructuredData } from "@/components/schema/structured-data";
+import { DarkBand } from "@/components/ui/dark-band";
+import { ImageSlot } from "@/components/ui/image-slot";
 
 export const metadata: Metadata = {
   title: "Food Safety Consultant for Multi-Unit Operators | CHB",
@@ -42,45 +44,59 @@ const services = [
   },
 ];
 
+/** Small amber accent rule used above section headings. */
+function AccentRule() {
+  return <div className="mb-6 h-1 w-12 rounded-full bg-amber" aria-hidden="true" />;
+}
+
 export default function HomePage() {
   return (
     <>
       <StructuredData />
 
       {/* Hero */}
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="font-serif text-4xl font-semibold leading-[1.1] tracking-tight text-heading sm:text-5xl lg:text-6xl">
+      <DarkBand>
+        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16 lg:px-8">
+          <div className="max-w-2xl">
+            <AccentRule />
+            <h1 className="font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.5rem]">
               One bad inspection becomes a brand problem across every location.
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground sm:text-xl">
+            <p className="mt-8 text-lg leading-relaxed text-on-ink/85 sm:text-xl">
               CHB Food Safety Consulting keeps multi-unit restaurant,
               convenience, and grocery operators inspection-ready. Founded by
               Chirag Bhatt, a former city health inspector, Health Department
               Program Chief, and food safety director for a 1,700-location
               restaurant brand.
             </p>
-            <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+            <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
               <CalendlyPopupButton size="lg">
                 Book a 20-minute inspection readiness call
               </CalendlyPopupButton>
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-1.5 text-sm font-medium text-link underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="group inline-flex items-center gap-1.5 text-sm font-medium text-amber-bright underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
               >
                 Or send a note
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
               </Link>
             </div>
           </div>
+          <ImageSlot
+            tone="dark"
+            label="Food image"
+            note="Commercial kitchen or prep line"
+            icon={<Utensils className="h-5 w-5" />}
+            className="min-h-[320px] lg:min-h-[420px]"
+          />
         </div>
-      </section>
+      </DarkBand>
 
       {/* The credential */}
       <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.6fr_1fr] lg:gap-16 lg:px-8">
+          <div className="max-w-2xl">
+            <AccentRule />
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               He has sat on both sides of the inspection table.
             </h2>
@@ -112,12 +128,22 @@ export default function HomePage() {
               </p>
             </div>
           </div>
+          <div className="lg:pt-2">
+            <ImageSlot
+              tone="light"
+              label="Chirag Bhatt"
+              note="Professional headshot (portrait)"
+              icon={<Camera className="h-5 w-5" />}
+              className="aspect-[4/5]"
+            />
+          </div>
         </div>
       </section>
 
       {/* Three ways he works */}
       <section className="border-b border-border bg-muted">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+          <AccentRule />
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
             Three ways he works
           </h2>
@@ -126,7 +152,7 @@ export default function HomePage() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group flex flex-col rounded-lg border border-border bg-card p-7 transition-colors hover:border-heading/30 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="group flex flex-col rounded-lg border border-border bg-card p-7 shadow-sm transition-colors hover:border-amber/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <h3 className="text-lg font-semibold leading-snug text-heading">
                   {service.title}
@@ -134,7 +160,7 @@ export default function HomePage() {
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground">
                   {service.body}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-link">
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-amber-ink">
                   Learn more
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                 </span>
@@ -146,8 +172,9 @@ export default function HomePage() {
 
       {/* Who he works with */}
       <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
+        <div className="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8">
+          <div>
+            <AccentRule />
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               Built for operators with more than one location.
             </h2>
@@ -168,56 +195,65 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:gap-8">
               <Link
                 href="/multi-unit-food-safety"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-link underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-ink underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 For multi-unit operators
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
                 href="/food-manufacturing-consulting"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-link underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-amber-ink underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 For food manufacturers
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
           </div>
+          <ImageSlot
+            tone="light"
+            label="Food image"
+            note="Multi-unit kitchen or retail foodservice"
+            icon={<Utensils className="h-5 w-5" />}
+            className="aspect-[5/4]"
+          />
         </div>
       </section>
 
       {/* Proof */}
-      <section className="border-b border-border bg-muted">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-          <figure className="mx-auto max-w-3xl">
-            <blockquote className="font-serif text-2xl font-medium leading-snug text-heading sm:text-3xl">
+      <DarkBand glow={false}>
+        <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+          <figure>
+            <Quote className="h-9 w-9 text-amber" aria-hidden="true" />
+            <blockquote className="mt-6 font-serif text-2xl font-medium leading-snug sm:text-3xl">
               &ldquo;He has a superb background in food safety, regulatory laws,
               audit schemes, and compliance.&rdquo;
             </blockquote>
-            <figcaption className="mt-6 text-sm text-muted-foreground">
+            <figcaption className="mt-6 text-sm text-on-ink-muted">
               &mdash; [NAME], [TITLE], [COMPANY]
             </figcaption>
           </figure>
         </div>
-      </section>
+      </DarkBand>
 
       {/* Closing CTA */}
-      <section>
+      <DarkBand>
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
+            <AccentRule />
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               Twenty minutes will tell you whether this is worth a longer
               conversation.
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-foreground sm:text-lg">
+            <p className="mt-6 text-base leading-relaxed text-on-ink/85 sm:text-lg">
               No pitch deck and no obligation. Bring your last three inspection
               reports and he will tell you what he sees.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 rounded-xl bg-background p-2 shadow-lg">
             <CalendlyInline />
           </div>
         </div>
-      </section>
+      </DarkBand>
     </>
   );
 }

@@ -26,13 +26,13 @@ function Wordmark() {
   return (
     <Link
       href="/"
-      className="flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      className="flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
       aria-label="CHB Food Safety Consulting, home"
     >
-      <span className="font-serif text-xl font-semibold tracking-tight text-heading">
-        CHB
+      <span className="font-serif text-xl font-semibold tracking-tight text-on-ink">
+        CHB<span className="text-amber">.</span>
       </span>
-      <span className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+      <span className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-on-ink-muted">
         Food Safety Consulting
       </span>
     </Link>
@@ -43,7 +43,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-40 w-full border-b border-[color:var(--on-ink-border)] bg-ink/95 backdrop-blur supports-[backdrop-filter]:bg-ink/85">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
         <Wordmark />
 
@@ -57,11 +57,11 @@ export function SiteHeader() {
               <DropdownMenu key={item.label}>
                 <DropdownMenuTrigger
                   className={cn(
-                    "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-heading transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-on-ink/90 transition-colors hover:bg-white/10 hover:text-on-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   )}
                 >
                   {item.label}
-                  <ChevronDown className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
+                  <ChevronDown className="h-4 w-4 text-on-ink-muted" aria-hidden="true" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="start">
                   {servicesNav.map((service) => (
@@ -75,7 +75,7 @@ export function SiteHeader() {
               <Link
                 key={item.label}
                 href={item.href ?? "/"}
-                className="rounded-md px-3 py-2 text-sm font-medium text-heading transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="rounded-md px-3 py-2 text-sm font-medium text-on-ink/90 transition-colors hover:bg-white/10 hover:text-on-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 {item.label}
               </Link>
@@ -92,7 +92,7 @@ export function SiteHeader() {
         <div className="lg:hidden">
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" aria-label="Open menu">
+              <Button variant="outlineOnDark" size="icon" aria-label="Open menu">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
