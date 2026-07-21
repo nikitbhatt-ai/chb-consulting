@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Camera, Quote, Utensils } from "lucide-react";
+import { ArrowRight, Quote } from "lucide-react";
 
 import { CalendlyPopupButton } from "@/components/calendly/calendly-popup-button";
 import { CalendlyInline } from "@/components/calendly/calendly-inline";
 import { StructuredData } from "@/components/schema/structured-data";
 import { DarkBand } from "@/components/ui/dark-band";
-import { ImageSlot } from "@/components/ui/image-slot";
 
 export const metadata: Metadata = {
   title: "Food Safety Consultant for Multi-Unit Operators | CHB",
@@ -133,13 +132,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="lg:pt-2">
-            <ImageSlot
-              tone="light"
-              label="Chirag Bhatt"
-              note="Professional headshot (portrait)"
-              icon={<Camera className="h-5 w-5" />}
-              className="aspect-[4/5]"
-            />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border shadow-sm">
+              <Image
+                src="/images/chirag-headshot.jpg"
+                alt="Chirag Bhatt, founder of CHB Food Safety Consulting"
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -213,13 +214,15 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <ImageSlot
-            tone="light"
-            label="Food image"
-            note="Multi-unit kitchen or retail foodservice"
-            icon={<Utensils className="h-5 w-5" />}
-            className="aspect-[5/4]"
-          />
+          <div className="relative aspect-[16/9] overflow-hidden rounded-xl border border-border shadow-sm">
+            <Image
+              src="/images/washing-hands.jpeg"
+              alt="A chef washing hands at a stainless steel kitchen sink beside fresh produce"
+              fill
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
