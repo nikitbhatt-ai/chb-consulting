@@ -27,7 +27,7 @@ export const siteConfig = {
   // e.g. "https://calendly.com/chirag-bhatt/20min".
   // This single value powers the header "Book a call" button and every
   // Calendly embed on the site.
-  calendlyUrl: "https://calendly.com/PLACEHOLDER/20min",
+  calendlyUrl: "https://calendly.com/chiraghouston",
   // ▲▲▲  PASTE YOUR CALENDLY LINK ABOVE  ▲▲▲
   // ---------------------------------------------------------------------------
 } as const;
