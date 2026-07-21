@@ -29,8 +29,8 @@ export function DarkBand({
         className="pointer-events-none absolute inset-0 -z-20"
         style={{
           backgroundImage: glow
-            ? "radial-gradient(120% 120% at 18% 0%, #1c212b 0%, #12141a 55%, #0b0c10 100%), radial-gradient(50% 55% at 88% 12%, rgba(200,162,76,0.18), transparent 60%)"
-            : "radial-gradient(120% 120% at 50% 0%, #1a1d24 0%, #101216 60%, #0b0c10 100%)",
+            ? "radial-gradient(120% 120% at 18% 0%, #1a2740 0%, #0f1a2c 55%, #080f1c 100%), radial-gradient(50% 55% at 88% 12%, rgba(200,162,76,0.18), transparent 60%)"
+            : "radial-gradient(120% 120% at 50% 0%, #16223a 0%, #0d1524 60%, #080f1c 100%)",
         }}
       />
       {/* Fine grain */}

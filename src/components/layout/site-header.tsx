@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 
@@ -26,15 +27,17 @@ function Wordmark() {
   return (
     <Link
       href="/"
-      className="flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+      className="flex items-center rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
       aria-label="CHB Food Safety Consulting, home"
     >
-      <span className="font-serif text-xl font-semibold tracking-tight text-on-ink">
-        CHB<span className="text-amber">.</span>
-      </span>
-      <span className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-on-ink-muted">
-        Food Safety Consulting
-      </span>
+      <Image
+        src="/images/chb-logo-white.png"
+        alt="CHB Food Safety Consulting"
+        width={1518}
+        height={1516}
+        priority
+        className="h-14 w-auto"
+      />
     </Link>
   );
 }

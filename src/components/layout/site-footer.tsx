@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { footerNav, siteConfig, socialLinks } from "@/lib/site";
@@ -25,6 +26,13 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Business identity */}
           <div>
+            <Image
+              src="/images/chb-logo-white.png"
+              alt="CHB Food Safety Consulting"
+              width={1518}
+              height={1516}
+              className="mb-4 h-16 w-auto"
+            />
             <p className="font-serif text-lg font-semibold text-on-ink">
               {siteConfig.name}
             </p>

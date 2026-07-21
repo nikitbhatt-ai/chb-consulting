@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Camera, Quote, Utensils } from "lucide-react";
 
@@ -82,13 +83,16 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <ImageSlot
-            tone="dark"
-            label="Food image"
-            note="Commercial kitchen or prep line"
-            icon={<Utensils className="h-5 w-5" />}
-            className="min-h-[320px] lg:min-h-[420px]"
-          />
+          <div className="relative min-h-[300px] overflow-hidden rounded-xl border border-[color:var(--on-ink-border)] shadow-xl lg:min-h-[440px]">
+            <Image
+              src="/images/food-tray.jpg"
+              alt="Fresh vegetables, sliced proteins, cheeses, and prepared toppings arranged across a multi-unit foodservice salad bar"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </DarkBand>
 

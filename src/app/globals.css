@@ -47,11 +47,11 @@
   /* Focus ring */
   --ring: #c8a24c;
 
-  /* --- Dark "ink" bands --- */
-  --ink: #101216;
-  --ink-soft: #1a1d24;
+  /* --- Dark "ink" bands (dark navy, tied to the logo) --- */
+  --ink: #0d1524;
+  --ink-soft: #172234;
   --on-ink: #ecebe4; /* off-white text on dark */
-  --on-ink-muted: #a8a49a;
+  --on-ink-muted: #a6adba;
   --on-ink-border: rgba(255, 255, 255, 0.14);
 
   /* Destructive (form validation states) */
