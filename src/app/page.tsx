@@ -256,8 +256,8 @@ export default function HomePage() {
               reports and he will tell you what he sees.
             </p>
           </div>
-          <div className="mt-10 rounded-xl bg-background p-2 shadow-lg">
-            <CalendlyInline />
+          <div className="mt-10">
+            <CalendlyInline tone="dark" />
           </div>
         </div>
       </DarkBand>
