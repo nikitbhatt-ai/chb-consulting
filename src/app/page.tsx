@@ -112,8 +112,9 @@ export default function HomePage() {
               <p>
                 He began as a health inspector with the City of Houston public
                 health agency and advanced to Health Department Program Chief.
-                He then implemented inspection technology for public health
-                agencies in Washington DC, Chicago, San Antonio, and Tulsa. He
+                He then helped implement technology and data management
+                solutions for public health agencies in Washington DC,
+                Chicago, San Antonio, and Tulsa. He
                 went on to serve as Regulatory Affairs Manager, Technical
                 Services Director, and Food Safety and QA Director for a
                 publicly traded restaurant company with 1,700 locations, a
@@ -187,10 +188,11 @@ export default function HomePage() {
               <p>
                 Single-location problems are usually training problems.
                 Multi-location problems are system problems, and they compound.
-                CHB builds the systems: standard operating procedures,
-                self-inspection programs, and Active Managerial Control
-                practices that hold up across every shift, every store, and
-                every inspector in every jurisdiction you operate in.
+                Chirag builds the systems: standard operating procedures
+                customized for your organization, self-inspection programs, and
+                Active Managerial Control practices that hold up across every
+                shift, every store, and every inspector in every jurisdiction
+                you operate in. Create your own food safety culture!
               </p>
               <p>
                 He also works with food manufacturers on HACCP plans, food
