@@ -527,6 +527,110 @@ Education first, every time.
 Speaking: He presents on food safety topics at industry and regulatory
 forums. [ADD SPEAKING ENGAGEMENTS AND PHOTOS]
 
+### Owner-provided About Us copy (uploaded About_Us_website.docx)
+
+NOTE: This copy names specific former employers and clients (Bloomin'
+Brands, Buc-ee's, Sysco, First Watch). The original brief (Part 4, item
+6) flagged confirming whether these may be published named. Confirm
+before this goes live.
+
+> About Us – CHB Food Safety Consulting
+>
+> Turn Food Safety Compliance into a Competitive Advantage
+>
+> In the food industry, regulations aren't just checkboxes but they're
+> your shield against costly fines, shutdowns, brand damage, and
+> lawsuits. At CHB Food Safety Consulting, we help restaurant groups,
+> convenience store chains, distributors, and foodservice operators
+> achieve Best-in-Class food safety without the usual friction, fear, or
+> operational disruption.
+>
+> Meet Chirag Bhatt — 40+ Years Bridging the Gap Between Regulators and
+> Operators
+>
+> I've spent my career on both sides of the table:
+>
+> - As a senior regulator with the City of Houston, where I led with an
+>   "Education First" approach for 26 years.
+> - As Global Regulatory Compliance Manager for Bloomin' Brands (1,700+
+>   locations).
+> - As Director of Food Safety & QA for Buc-ee's and in top-tier food
+>   distribution company – Sysco Corporation.
+> - As a trusted advisor helping public health agencies in Washington
+>   D.C., Chicago, San Antonio, and beyond modernize their systems.
+>
+> That rare perspective lets me translate complex "Health Departmanese"
+> into practical, actionable steps your teams actually understand and
+> follow.
+>
+> The Rainman of the Food Code — My teams nicknamed me the "Rainman of
+> the Food Code" for my deep regulatory knowledge. Operators called me
+> the person who speaks Health Departmanese - and more importantly,
+> translates it so everyone gets on board.
+>
+> I don't show up as the "food safety cop." I show up as your partner
+> who believes: If you can see it, you can fix it. My goal is to replace
+> resentment with collaboration, turning compliance into a culture that
+> protects your customers, your brand, and your bottom line.
+>
+> Why Partner with CHB Food Safety Consulting?
+>
+> - Proven Results Across the Supply Chain: From manufacturing and
+>   distribution to multi-unit restaurants and high-volume convenience
+>   operations.
+> - Practical, Not Punitive: I build systems that work in real kitchens
+>   with real teams under real pressure.
+> - Regulatory Insight Others Lack: Deep understanding of FDA Food Code,
+>   local/state/federal expectations, and how to influence positive
+>   outcomes with inspectors.
+> - End-to-End Expertise: Risk assessments, program development, audit
+>   preparation, corrective action plans, SOPs, technology
+>   implementation, training, and executive reporting.
+>
+> Whether you're a growing regional chain facing scaling challenges, a
+> large operator preparing for aggressive growth, or a company
+> recovering from a compliance issue, I deliver solutions tailored to
+> your operation.
+>
+> What Clients Say
+>
+> "Chirag has a superb background in food safety, regulatory laws, audit
+> schemes, and compliance. He is extremely friendly and uses a
+> collaborative approach to problem solving." — Former Manager
+>
+> "He related very well to operators and health department officials
+> across the country." — Former Concept President
+>
+> "Chirag is a consummate professional… always willing to volunteer his
+> time to help others improve their food safety programs, sharing best
+> practices and leading new ideas for regulatory improvements." — Public
+> Health Expert and Industry Leader
+>
+> Additional clients include executives from First Watch and other
+> leading hospitality and retail food brands.
+>
+> Let's Build a Safer, Stronger Operation Together
+>
+> If you're ready to move beyond "passing inspections" to building a
+> truly robust food safety culture that supports growth, I'd love to
+> speak with you.
+>
+> Services Include:
+>
+> - Comprehensive food safety program development & gap assessments
+> - Audit readiness (internal, third-party, regulatory)
+> - Corrective action planning and sustained compliance
+> - Team training and culture transformation
+> - Regulatory interpretation and agency liaison support
+> - SOP development and operational excellence initiatives
+> - Keynote speaking and leadership presentations
+>
+> Contact Chirag Bhatt today to schedule a no-obligation consultation.
+> Let's discuss your specific challenges and explore how 40 years of
+> hard-won expertise can deliver measurable results for your business.
+>
+> [Contact Us / Schedule a Call Button]
+
 ---
 
 ## CONTACT
