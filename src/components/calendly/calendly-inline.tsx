@@ -14,88 +14,95 @@ interface CalendlyInlineProps {
 /**
  * Inline Calendly scheduling widget with a graceful fallback.
  *
- * The container deliberately does NOT use Calendly's `calendly-inline-widget`
- * class: that class triggers Calendly's auto-initializer, which injects a blank
- * iframe when it finds no data-url. Instead we mount the widget manually once
- * the Calendly script is ready. Until then (or if Calendly is blocked/slow) we
- * show an on-brand booking button so the section never looks empty.
+ * Two-step mount so Calendly measures a *visible* container:
+ *   1. Poll until the Calendly script is available -> set `scriptReady`.
+ *   2. That render swaps the fallback out for a visible, sized host div.
+ *      A follow-up effect then initializes the widget into it.
+ *
+ * Initializing while the host is still hidden makes Calendly build a
+ * zero-height (cut-off) calendar, so the ordering matters. The container
+ * also avoids Calendly's `calendly-inline-widget` class to prevent the
+ * auto-initializer from injecting a second, blank iframe.
  */
 export function CalendlyInline({
   url = siteConfig.calendlyUrl,
   tone = "dark",
 }: CalendlyInlineProps) {
   const hostRef = useRef<HTMLDivElement>(null);
-  const [ready, setReady] = useState(false);
+  const initialized = useRef(false);
+  const [scriptReady, setScriptReady] = useState(false);
 
+  // Step 1: wait for the Calendly script.
   useEffect(() => {
     if (!calendlyConfigured) return;
-
     let cancelled = false;
     let tries = 0;
-
-    function init() {
+    function check() {
       if (cancelled) return;
-      const host = hostRef.current;
-      const calendly = (
-        window as unknown as {
-          Calendly?: {
-            initInlineWidget: (o: { url: string; parentElement: HTMLElement }) => void;
-          };
-        }
-      ).Calendly;
-
-      if (calendly && host) {
-        host.innerHTML = "";
-        calendly.initInlineWidget({ url, parentElement: host });
-        setReady(true);
+      const hasCalendly = Boolean(
+        (window as unknown as { Calendly?: unknown }).Calendly
+      );
+      if (hasCalendly) {
+        setScriptReady(true);
         return;
       }
-      if (tries++ < 40) window.setTimeout(init, 300); // give it ~12s
+      if (tries++ < 40) window.setTimeout(check, 300); // ~12s
     }
-
-    init();
+    check();
     return () => {
       cancelled = true;
     };
-  }, [url]);
+  }, []);
+
+  // Step 2: once the host is rendered and visible, mount the widget into it.
+  useEffect(() => {
+    if (!scriptReady || initialized.current) return;
+    const host = hostRef.current;
+    const calendly = (
+      window as unknown as {
+        Calendly?: {
+          initInlineWidget: (o: { url: string; parentElement: HTMLElement }) => void;
+        };
+      }
+    ).Calendly;
+    if (host && calendly) {
+      host.innerHTML = "";
+      calendly.initInlineWidget({ url, parentElement: host });
+      initialized.current = true;
+    }
+  }, [scriptReady, url]);
 
   const fallbackClasses =
     tone === "dark"
       ? "border-[color:var(--on-ink-border)] bg-white/[0.03]"
       : "border-border bg-muted";
 
-  return (
-    <div>
-      {/* The Calendly calendar mounts here once the script is ready. */}
+  if (scriptReady) {
+    return (
       <div
         ref={hostRef}
         aria-label="Book a 30-minute inspection readiness call"
-        className={
-          ready
-            ? "min-h-[700px] w-full overflow-hidden rounded-xl bg-white shadow-lg"
-            : "hidden"
-        }
+        className="h-[700px] min-h-[700px] w-full overflow-hidden rounded-xl bg-white shadow-lg"
       />
+    );
+  }
 
-      {/* Fallback: a real booking button, shown until the calendar loads. */}
-      {!ready && (
-        <div
-          className={`flex min-h-[220px] flex-col items-center justify-center gap-5 rounded-xl border px-6 py-12 text-center ${fallbackClasses}`}
-        >
-          {calendlyConfigured ? (
-            <CalendlyPopupButton size="lg">
-              Book a 30-minute inspection readiness call
-            </CalendlyPopupButton>
-          ) : (
-            <p className="text-sm text-muted-foreground">
-              Add your Calendly link in{" "}
-              <code className="rounded bg-background px-1 py-0.5 text-xs">
-                src/lib/site.ts
-              </code>{" "}
-              to load the booking calendar here.
-            </p>
-          )}
-        </div>
+  return (
+    <div
+      className={`flex min-h-[220px] flex-col items-center justify-center gap-5 rounded-xl border px-6 py-12 text-center ${fallbackClasses}`}
+    >
+      {calendlyConfigured ? (
+        <CalendlyPopupButton size="lg">
+          Book a 30-minute inspection readiness call
+        </CalendlyPopupButton>
+      ) : (
+        <p className="text-sm text-muted-foreground">
+          Add your Calendly link in{" "}
+          <code className="rounded bg-background px-1 py-0.5 text-xs">
+            src/lib/site.ts
+          </code>{" "}
+          to load the booking calendar here.
+        </p>
       )}
     </div>
   );
