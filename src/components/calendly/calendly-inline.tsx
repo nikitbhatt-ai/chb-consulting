@@ -69,7 +69,7 @@ export function CalendlyInline({
       {/* The Calendly calendar mounts here once the script is ready. */}
       <div
         ref={hostRef}
-        aria-label="Book a 20-minute inspection readiness call"
+        aria-label="Book a 30-minute inspection readiness call"
         className={
           ready
             ? "min-h-[700px] w-full overflow-hidden rounded-xl bg-white shadow-lg"
@@ -84,7 +84,7 @@ export function CalendlyInline({
         >
           {calendlyConfigured ? (
             <CalendlyPopupButton size="lg">
-              Book a 20-minute inspection readiness call
+              Book a 30-minute inspection readiness call
             </CalendlyPopupButton>
           ) : (
             <p className="text-sm text-muted-foreground">

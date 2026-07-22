@@ -104,7 +104,7 @@ Route: `/`
 Title tag: Food Safety Consultant for Multi-Unit Operators | CHB
 Meta description: Former health inspector and food safety director for a
 1,700-location chain. CHB keeps multi-unit restaurant and retail brands
-inspection-ready. Book a 20-minute call.
+inspection-ready. Book a 30-minute call.
 
 ### Hero
 
@@ -116,7 +116,7 @@ grocery operators inspection-ready. Founded by Chirag Bhatt, a former
 city health inspector, Health Department Program Chief, and food safety
 director for a 1,700-location restaurant brand.
 
-Primary button: Book a 20-minute inspection readiness call
+Primary button: Book a 30-minute inspection readiness call
 Secondary link: Or send a note
 
 ### Section: The credential
@@ -184,7 +184,7 @@ Two links: "For multi-unit operators" and "For food manufacturers"
 
 ### Closing CTA
 
-H2: Twenty minutes will tell you whether this is worth a longer
+H2: Thirty minutes will tell you whether this is worth a longer
 conversation.
 
 No pitch deck and no obligation. Bring your last three inspection
@@ -276,7 +276,7 @@ operation
 > and implementing sustainable food safety programs."
 > — [NAME], [TITLE], [COMPANY]
 
-Page CTA: Book a 20-minute call to scope a retainer
+Page CTA: Book a 30-minute call to scope a retainer
 
 ---
 
@@ -350,7 +350,7 @@ actually runs. Scoped per project.
 > and the current food safety issues."
 > — [NAME], [TITLE], [COMPANY]
 
-CTA: Book a 20-minute call
+CTA: Book a 30-minute call
 
 ---
 
@@ -399,7 +399,7 @@ for, how a finding gets documented, and how to close it out cleanly.
 > as providing executive updates."
 > — [NAME], [TITLE], [COMPANY]
 
-CTA: Book a 20-minute call
+CTA: Book a 30-minute call
 
 ---
 
@@ -436,7 +436,7 @@ For multi-unit clients, on-site work is available anywhere in the US.
 Repeat the three core offerings with Houston framing. Link each to its
 main page. Keep it short. This page exists to rank and to route.
 
-CTA: Book a 20-minute call
+CTA: Book a 30-minute call
 
 ---
 
@@ -531,20 +531,20 @@ forums. [ADD SPEAKING ENGAGEMENTS AND PHOTOS]
 
 Route: `/contact`
 Title tag: Contact CHB Food Safety Consulting
-Meta description: Book a 20-minute inspection readiness call, or send a
+Meta description: Book a 30-minute inspection readiness call, or send a
 note. Houston-based food safety consulting for multi-unit operators and
 manufacturers.
 
 H1: Let's talk
 
-Twenty minutes is usually enough to tell whether this is worth pursuing.
+Thirty minutes is usually enough to tell whether this is worth pursuing.
 Bring your last few inspection reports if you have them.
 
 Two paths side by side, stacking on mobile.
 
 Left — Calendly inline embed
-- Event: 20-Minute Inspection Readiness Call
-- Duration: 20 minutes, 15-minute buffer after
+- Event: 30-Minute Inspection Readiness Call
+- Duration: 30 minutes, 15-minute buffer after
 - Booking fields: name, work email, company, number of locations, what
   prompted you to reach out
 - Confirmation and reminder emails enabled

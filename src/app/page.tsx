@@ -11,7 +11,7 @@ import { DarkBand } from "@/components/ui/dark-band";
 export const metadata: Metadata = {
   title: "Food Safety Consultant for Multi-Unit Operators | CHB",
   description:
-    "Former health inspector and food safety director for a 1,700-location chain. CHB keeps multi-unit restaurant and retail brands inspection-ready. Book a 20-minute call.",
+    "Former health inspector and food safety director for a 1,700-location chain. CHB keeps multi-unit restaurant and retail brands inspection-ready. Book a 30-minute call.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Food Safety Consultant for Multi-Unit Operators | CHB",
@@ -71,7 +71,7 @@ export default function HomePage() {
             </p>
             <div className="mt-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center">
               <CalendlyPopupButton size="lg">
-                Book a 20-minute inspection readiness call
+                Book a 30-minute inspection readiness call
               </CalendlyPopupButton>
               <Link
                 href="/contact"
@@ -248,7 +248,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <AccentRule />
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Twenty minutes will tell you whether this is worth a longer
+              Thirty minutes will tell you whether this is worth a longer
               conversation.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-on-ink/85 sm:text-lg">
