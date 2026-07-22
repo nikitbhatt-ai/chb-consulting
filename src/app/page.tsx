@@ -116,10 +116,11 @@ export default function HomePage() {
                 solutions for public health agencies in Washington DC,
                 Chicago, San Antonio, and Tulsa. He
                 went on to serve as Regulatory Affairs Manager, Technical
-                Services Director, and Food Safety and QA Director for a
-                publicly traded restaurant company with 1,700 locations, a
-                national distribution company, and one of the largest
-                convenience store chains in the country.
+                Services Director, and Food Safety and QA Director for
+                Bloomin&rsquo; Brands, a publicly traded restaurant company with
+                1,700 locations; Sysco, a national distribution company; and
+                Buc-ee&rsquo;s, one of the largest convenience store chains in
+                the country.
               </p>
               <p>
                 A manager at that restaurant company introduced him as the
