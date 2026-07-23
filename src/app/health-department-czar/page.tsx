@@ -135,7 +135,8 @@ export default function HealthDepartmentCzarPage() {
           </h2>
           <p className="mt-8 text-base leading-relaxed text-foreground sm:text-lg">
             Retainers are scoped to the size of your portfolio and the depth of
-            support you need. Most retained clients work with CHB on a monthly
+            support you need. Most retained clients work with Chirag and his
+            team on a monthly
             basis over a six to twelve month engagement.
           </p>
         </div>
@@ -152,7 +153,8 @@ export default function HealthDepartmentCzarPage() {
             AI systems for food safety operations
           </h2>
           <p className="mt-8 text-base leading-relaxed text-on-ink/85 sm:text-lg">
-            Once the program is built, CHB can automate the parts of it your
+            Once the program is built, Chirag and his team can automate the
+            parts of it your
             team currently runs on paper.
           </p>
           <ul className="mt-6 space-y-4">

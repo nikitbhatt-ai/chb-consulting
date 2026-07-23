@@ -121,7 +121,8 @@ export default function MultiUnitPage() {
         <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="rounded-xl border border-border bg-muted p-8">
             <p className="text-base leading-relaxed text-foreground sm:text-lg">
-              CHB can also automate your self-inspection checklists and SOP
+              Chirag and his team can also automate your self-inspection
+              checklists and SOP
               maintenance, and build custom AI tooling around how your operation
               actually runs. Scoped per project.
             </p>
@@ -146,7 +147,7 @@ export default function MultiUnitPage() {
               picture, business, and the current food safety issues.&rdquo;
             </blockquote>
             <figcaption className="mt-6 text-sm text-muted-foreground">
-              &mdash; [NAME], [TITLE], [COMPANY]
+              &mdash; Former R&amp;D Director
             </figcaption>
           </figure>
         </div>

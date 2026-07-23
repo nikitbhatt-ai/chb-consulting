@@ -111,7 +111,7 @@ inspection-ready. Book a 30-minute call.
 H1: One bad inspection becomes a brand problem across every location.
 
 Subhead:
-CHB Food Safety Consulting keeps multi-unit restaurant, convenience, and
+Chirag and his team keep multi-unit restaurant, convenience, and
 grocery operators inspection-ready. Founded by Chirag Bhatt, a former
 city health inspector, Health Department Program Chief, and food safety
 director for a 1,700-location restaurant brand.
@@ -247,14 +247,16 @@ approach is why health departments take his calls now.
 ### Engagement shape
 
 Retainers are scoped to the size of your portfolio and the depth of
-support you need. Most retained clients work with CHB on a monthly basis
+support you need. Most retained clients work with Chirag and his team on a
+monthly basis
 over a six to twelve month engagement.
 
 DO NOT DISPLAY PRICING ANYWHERE ON THE SITE.
 
 ### Add-on: AI systems for food safety operations
 
-Once the program is built, CHB can automate the parts of it your team
+Once the program is built, Chirag and his team can automate the parts of it
+your team
 currently runs on paper.
 
 - Digital self-inspection checklists managers complete on a phone, with
@@ -341,7 +343,7 @@ create a compliance problem you have to unwind later.
 Two lines plus a link to the full section on the Health Department Czar
 page.
 
-CHB can also automate your self-inspection checklists and SOP
+Chirag and his team can also automate your self-inspection checklists and SOP
 maintenance, and build custom AI tooling around how your operation
 actually runs. Scoped per project.
 
@@ -350,7 +352,7 @@ actually runs. Scoped per project.
 > "Chirag considers all the facts and doesn't overlook a single detail
 > while at the same time he thoroughly grasps the big picture, business,
 > and the current food safety issues."
-> — [NAME], [TITLE], [COMPANY]
+> — Former R&D Director
 
 CTA: Book a 30-minute call
 
@@ -370,7 +372,8 @@ to run the inspections.
 
 ### Scope
 
-CHB works with food manufacturers and processors, large and small, on:
+Chirag and his team work with food manufacturers and processors, large and
+small, on:
 
 - HACCP plan development, validation, and revision
 - Food safety plans and hazard analysis
@@ -399,7 +402,7 @@ for, how a finding gets documented, and how to close it out cleanly.
 > "In addition to Food Safety, he also has vast experience with creating
 > standard operating procedures and corrective action planning, as well
 > as providing executive updates."
-> — [NAME], [TITLE], [COMPANY]
+> — Former Supply Chain SVP
 
 CTA: Book a 30-minute call
 
@@ -416,9 +419,9 @@ Houston health inspector. On-site across Texas.
 H1: Houston food safety consultant
 Subhead: Based in Houston. On site anywhere in the US.
 
-CHB Food Safety Consulting is based in Houston, Texas, where Chirag
-Bhatt began his career as a health inspector with the City of Houston
-public health agency and advanced to Health Department Program Chief.
+Chirag Bhatt is based in Houston, Texas, where he began his career as a
+health inspector with the City of Houston public health agency and
+advanced to Health Department Program Chief.
 
 That matters locally in a way it does not anywhere else. He knows how
 Houston Health Department inspections are conducted, how findings are
@@ -426,7 +429,8 @@ documented, and who to talk to when something needs to be resolved
 rather than escalated. He has the same working knowledge of Harris
 County and surrounding jurisdictions.
 
-CHB serves operators throughout the Houston metro, including Katy, Sugar
+Chirag and his team serve operators throughout the Houston metro, including
+Katy, Sugar
 Land, The Woodlands, Pearland, Cypress, Spring, Baytown, and the
 Heights, as well as brands operating across Texas in Dallas, Austin, San
 Antonio, and Fort Worth.
@@ -519,13 +523,17 @@ Structure it as a timeline or as sections by era:
    one of the largest convenience store chains in the US.
 4. Consulting. CHB Food Safety Consulting.
 
-Credentials block: HACCP certified. [ADD ANY OTHER CERTIFICATIONS]
+Credentials block: HACCP certified, RS (Registered Sanitarian), CCFS
+(Certified in Comprehensive Food Safety), and PCQI (FSMA).
 
 Philosophy pull quote: He has never wanted to be a food safety cop.
 Education first, every time.
 
 Speaking: He presents on food safety topics at industry and regulatory
-forums. [ADD SPEAKING ENGAGEMENTS AND PHOTOS]
+forums, including the National Environmental Health Association and its
+regional affiliates, AFDO and its regional affiliates, the National
+Restaurant Association, the Conference for Food Protection, and many
+others. [ADD SPEAKING PHOTOS]
 
 ### Owner-provided About Us copy (uploaded About_Us_website.docx)
 

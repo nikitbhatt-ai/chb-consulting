@@ -57,7 +57,8 @@ export default function FoodManufacturingPage() {
             Scope
           </h2>
           <p className="mt-8 text-base leading-relaxed text-foreground sm:text-lg">
-            CHB works with food manufacturers and processors, large and small,
+            Chirag and his team work with food manufacturers and processors,
+            large and small,
             on:
           </p>
           <ul className="mt-6 space-y-4">
@@ -113,7 +114,7 @@ export default function FoodManufacturingPage() {
               planning, as well as providing executive updates.&rdquo;
             </blockquote>
             <figcaption className="mt-6 text-sm text-muted-foreground">
-              &mdash; [NAME], [TITLE], [COMPANY]
+              &mdash; Former Supply Chain SVP
             </figcaption>
           </figure>
         </div>

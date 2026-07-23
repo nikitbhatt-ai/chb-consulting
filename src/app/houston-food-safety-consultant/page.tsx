@@ -63,10 +63,9 @@ export default function HoustonPage() {
         <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="space-y-6 text-base leading-relaxed text-foreground sm:text-lg">
             <p>
-              CHB Food Safety Consulting is based in Houston, Texas, where Chirag
-              Bhatt began his career as a health inspector with the City of
-              Houston public health agency and advanced to Health Department
-              Program Chief.
+              Chirag Bhatt is based in Houston, Texas, where he began his career
+              as a health inspector with the City of Houston public health
+              agency and advanced to Health Department Program Chief.
             </p>
             <p>
               That matters locally in a way it does not anywhere else. He knows
@@ -76,7 +75,8 @@ export default function HoustonPage() {
               knowledge of Harris County and surrounding jurisdictions.
             </p>
             <p>
-              CHB serves operators throughout the Houston metro, including Katy,
+              Chirag and his team serve operators throughout the Houston metro,
+              including Katy,
               Sugar Land, The Woodlands, Pearland, Cypress, Spring, Baytown, and
               the Heights, as well as brands operating across Texas in Dallas,
               Austin, San Antonio, and Fort Worth.
@@ -91,7 +91,7 @@ export default function HoustonPage() {
         <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
           <AccentRule />
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            How CHB helps Houston operators
+            How Chirag and his team help Houston operators
           </h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {localServices.map((service) => (

@@ -111,7 +111,7 @@ export default function AboutPage() {
             <p className="mt-6 text-base leading-relaxed text-on-ink/85 sm:text-lg">
               In the food industry, regulations aren&rsquo;t just checkboxes
               &mdash; they are your shield against costly fines, shutdowns, brand
-              damage, and lawsuits. CHB Food Safety Consulting helps restaurant
+              damage, and lawsuits. Chirag and his team help restaurant
               groups, convenience store chains, distributors, and foodservice
               operators achieve best-in-class food safety without the usual
               friction, fear, or operational disruption.
@@ -188,7 +188,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
           <AccentRule />
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            Why partner with CHB Food Safety Consulting
+            Why partner with Chirag and his team
           </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {reasons.map((reason) => (
@@ -223,7 +223,8 @@ export default function AboutPage() {
               Credentials and services
             </h2>
             <p className="mt-6 text-base leading-relaxed text-foreground sm:text-lg">
-              HACCP certified. [ADD ANY OTHER CERTIFICATIONS]
+              HACCP certified, RS (Registered Sanitarian), CCFS (Certified in
+              Comprehensive Food Safety), and PCQI (FSMA).
             </p>
             <ul className="mt-6 space-y-2 text-sm leading-relaxed text-foreground">
               {services.map((service) => (
@@ -237,8 +238,11 @@ export default function AboutPage() {
           <div>
             <h3 className="text-base font-semibold text-heading">Speaking</h3>
             <p className="mt-3 text-sm leading-relaxed text-foreground">
-              I present on food safety topics at industry and regulatory forums.
-              [ADD SPEAKING ENGAGEMENTS]
+              I present on food safety topics at industry and regulatory
+              forums, including the National Environmental Health Association and
+              its regional affiliates, AFDO and its regional affiliates, the
+              National Restaurant Association, the Conference for Food
+              Protection, and many others.
             </p>
             <div className="mt-5">
               <ImageSlot

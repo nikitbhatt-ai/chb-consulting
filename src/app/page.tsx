@@ -63,7 +63,7 @@ export default function HomePage() {
               One bad inspection becomes a brand problem across every location.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-on-ink/85 sm:text-xl">
-              CHB Food Safety Consulting keeps multi-unit restaurant,
+              Chirag and his team keep multi-unit restaurant,
               convenience, and grocery operators inspection-ready. Founded by
               Chirag Bhatt, a former city health inspector, Health Department
               Program Chief, and food safety director for a 1,700-location
